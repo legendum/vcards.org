@@ -32,6 +32,7 @@ a:hover {
   padding: 10px;
   position: relative;
   background-color: #eee;
+  background: linear-gradient(#eee, #ddd);
   min-width: 360px;
   box-shadow: 0 1px 1px #986;
 }
