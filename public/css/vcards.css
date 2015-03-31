@@ -45,11 +45,12 @@ a:hover {
 
 .page .header .search {
   margin: 0 auto;
-  width: 270px;
+  width: 30%;
+  white-space: nowrap;
 }
 
 .page .header .search #box {
-  width: 180px;
+  width: 60%;
   padding-left: 10px;
   line-height: 24px;
   border-radius: 16px;
