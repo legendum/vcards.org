@@ -54,19 +54,11 @@ a:hover {
 }
 
 .topbar .header .search #box {
-  width: 60%;
+  width: 100%;
   padding-left: 10px;
   line-height: 24px;
   border-radius: 16px;
   border: 1px solid #ccc;
-}
-
-.topbar .header .search #go {
-  color: #888;
-  background-color: #ccc;
-  height: 28px;
-  border: 1px solid #bbb;
-  border-radius: 14px;
 }
 
 .topbar .header .menu {
