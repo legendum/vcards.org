@@ -18,16 +18,15 @@
     <div class="header">
       <form name="search" method="get">
       <div class="menu">
-        <!-- login/logout links go here -->
-        <span class="access">
-          <a href="#login">Login</a> <span class="divbar">|</span>
-          <a href="#sign-up">Sign up</a>
+        <span id="access">
+          <a href="#login" id="login">Login</a> <span class="divbar">|</span>
+          <a href="#sign-up" id="signup">Sign up</a>
         </span>
-        <a href="#logout" class="hidden">Logout</a>
+        <a href="#logout" id="logout" class="hidden">Logout</a>
       </div>
       <div id="logo">vCards</div>
       <div class="search">
-        <input id="box" type="text" name="q" value="" placeholder="Search">
+        <input id="query" type="text" name="q" value="" placeholder="Search">
         <input type="hidden" name="la" value="en-us">
       </div>
       </form>

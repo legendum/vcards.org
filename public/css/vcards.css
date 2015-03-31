@@ -50,10 +50,9 @@ a:hover {
 .topbar .header .search {
   margin: 0 auto;
   width: 30%;
-  white-space: nowrap;
 }
 
-.topbar .header .search #box {
+.topbar .header .search #query {
   width: 100%;
   padding-left: 10px;
   line-height: 24px;
