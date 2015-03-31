@@ -75,16 +75,16 @@ a:hover {
 
 .page {
   position: relative;
-  padding-top: 60px;
-  min-height: 600px;
+  padding-top: 63px;
+  min-height: 630px;
   background-color: #c0c0c0;
   background-image: url(/img/nasty_fabric.png);
   color: #555;
 }
 
 .card {
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-left: 12px;
+  margin-bottom: 12px;
   float: left;
   width: 360px;
   height: 200px;
