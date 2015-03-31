@@ -19,22 +19,23 @@ a:hover {
   text-decoration: underline;
 }
 
-.page {
-  position: relative;
-  background-color: #fff;
-  color: #555;
-  box-shadow: 0 0 5px #777;
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-.page .header {
+.topbar .header {
   padding: 10px;
   position: relative;
   background-color: #eee;
   min-width: 360px;
-  box-shadow: 0 0 5px #777;
+  box-shadow: 0 0 5px #333;
 }
 
-.page .header #logo {
+.topbar .header #logo {
   padding: 0;
   margin: 0;
   margin-top: 2px;
@@ -43,13 +44,13 @@ a:hover {
   float: left;
 }
 
-.page .header .search {
+.topbar .header .search {
   margin: 0 auto;
   width: 30%;
   white-space: nowrap;
 }
 
-.page .header .search #box {
+.topbar .header .search #box {
   width: 60%;
   padding-left: 10px;
   line-height: 24px;
@@ -57,7 +58,7 @@ a:hover {
   border: 1px solid #ccc;
 }
 
-.page .header .search #go {
+.topbar .header .search #go {
   color: #888;
   background-color: #ccc;
   height: 28px;
@@ -65,16 +66,40 @@ a:hover {
   border-radius: 14px;
 }
 
-.page .header .menu {
+.topbar .header .menu {
   position: absolute;
   top: 10px;
   right: 10px;
   padding: 5px;
 }
 
+.page {
+  position: relative;
+  background-color: #fff;
+  color: #555;
+  box-shadow: 0 0 5px #333;
+}
+
 .page .content {
   padding: 10px;
-  min-height: 630px;
+  padding-top: 60px;
+  min-height: 600px;
+  background-color: #ccc;
+}
+
+.card {
+  width: 350px;
+  height: 200px;
+  background-color: white;
+}
+
+.card .info {
+  padding: 10px;
+}
+
+.info .company {
+  font-size: 20px;
+  padding-bottom: 5px;
 }
 
 .footer {
