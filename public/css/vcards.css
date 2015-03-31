@@ -32,7 +32,7 @@ a:hover {
   position: relative;
   background-color: #eee;
   min-width: 360px;
-  box-shadow: 0 0 5px #333;
+  box-shadow: 0 3px 3px #999;
 }
 
 .topbar .header #logo {
@@ -75,15 +75,10 @@ a:hover {
 
 .page {
   position: relative;
-  background-color: #fff;
-  color: #555;
-  box-shadow: 0 0 5px #333;
-}
-
-.page .content {
   padding-top: 60px;
   min-height: 600px;
-  background-color: #ccc;
+  background: #ccc url(img/binding_light.png) repeat;
+  color: #555;
 }
 
 .card {
@@ -93,6 +88,7 @@ a:hover {
   width: 360px;
   height: 200px;
   background-color: white;
+  box-shadow: 0 3px 3px #999;
 }
 
 .card .info {
