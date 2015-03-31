@@ -81,13 +81,15 @@ a:hover {
 }
 
 .page .content {
-  padding: 10px;
   padding-top: 60px;
   min-height: 600px;
   background-color: #ccc;
 }
 
 .card {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  float: left;
   width: 360px;
   height: 200px;
   background-color: white;
