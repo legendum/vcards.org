@@ -49,18 +49,19 @@ a:hover {
 }
 
 .page .header .search #box {
-  width: 188px;
+  width: 180px;
   padding-left: 10px;
-  line-height: 24px;
+  height: 28px;
   border-radius: 16px;
-  border: 1px solid #ccc;;
+  border: 1px solid #ccc;
 }
 
 .page .header .search #go {
   background-color: #ccc;
-  border: 1px solid #ccc;
-  border-radius: 14px;
   height: 28px;
+  width: 42px;
+  border-radius: 16px;
+  border: 1px solid #ccc;
 }
 
 .page .header .menu {
