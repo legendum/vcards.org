@@ -37,6 +37,7 @@ a:hover {
 .page .header #logo {
   padding: 0;
   margin: 0;
+  margin-top: 2px;
   color: #999;
   text-shadow: 0 1px 1px #fff;
   float: left;
@@ -56,10 +57,11 @@ a:hover {
 }
 
 .page .header .search #go {
+  color: #888;
   background-color: #ccc;
   height: 28px;
-  border: 1px solid #ccc;
-  border-radius: 16px;
+  border: 1px solid #bbb;
+  border-radius: 14px;
 }
 
 .page .header .menu {
@@ -75,8 +77,10 @@ a:hover {
 }
 
 .footer {
+  color: #888;
   padding: 20px;
   text-align: center;
+  text-shadow: 0 1px 1px #fff;
 }
 
 .divbar {
