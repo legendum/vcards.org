@@ -1,36 +1,87 @@
 body {
   font-family: arial, helvetica, sans-serif;
   font-size: 16px;
-  background-color: #eee;
+  background-color: #ddd;
 }
 
-h2 {
-  padding-top: 0;
-  margin-top: 0;
-  color: #333;
+a {
+  color: #33f;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #33f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #33f;
+  text-decoration: underline;
 }
 
 .page {
-  margin: 0 auto;
-  padding: 10px;
-  width: 450px;
+  position: relative;
   background-color: #fff;
   color: #555;
+  box-shadow: 0 0 5px #777;
 }
 
 .page .header {
+  padding: 10px;
   position: relative;
+  background-color: #eee;
+  min-width: 450px;
+  box-shadow: 0 0 5px #777;
+}
+
+.page .header #logo {
+  padding: 0;
+  margin: 0;
+  color: #999;
+  text-shadow: 0 1px 1px #fff;
+  float: left;
+}
+
+.page .header .search {
+  margin: 0 auto;
+  width: 270px;
+}
+
+.page .header .search #box {
+  width: 188px;
+  padding-left: 10px;
+  line-height: 24px;
+  border-radius: 16px;
+  border: 1px solid #ccc;;
+}
+
+.page .header .search #go {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 12px;
 }
 
 .page .header .menu {
   position: absolute;
   top: 10px;
   right: 10px;
+  padding: 5px;
 }
 
 .page .content {
-  min-height: 540px;
+  padding: 10px;
+  min-height: 630px;
 }
 
-.page .footer {
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.divbar {
+  color: #ccc;
+}
+
+.hidden {
+  display: none;
 }
