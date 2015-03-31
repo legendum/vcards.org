@@ -77,7 +77,8 @@ a:hover {
   position: relative;
   padding-top: 60px;
   min-height: 600px;
-  background: #ccc url(img/binding_light.png) repeat;
+  background-color: #ccc;
+  background-image: url(/img/nasty_fabric.png);
   color: #555;
 }
 
