@@ -29,7 +29,6 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
 }
 
 .topbar .header {
@@ -82,13 +81,8 @@ a:hover {
   color: #555;
 }
 
-.page:after {
-  content: "";
-  height: 63px;
-  display: block;
-}
-
 .footer {
+  position: relative;
   color: #986;
   padding: 12px;
   text-align: center;
