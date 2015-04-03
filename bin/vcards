@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+
+Dir.chdir File.expand_path("../..", __FILE__)
+command = ARGV[0]
+case command
+when 'help'
+  puts <<-End_of_help
+  vcards run        : Run vCards servers in development mode
+  vcards restart    : Restart "god" in production
+  vcards start      : Start "god" in production
+  vcards status     : Show "god" status in production
+  vcards stop       : Stop "god" in production
+  vcards test       : Run all tests in development mode
+  vcards test file  : Run specific tests in development mode
+  vcards [c]onsole  : Run a development console
+  End_of_help
+when 'run'
+  abort 'use "vcards start" in production' if ENV['RACK_ENV'] == 'production'
+  system "foreman start -f Procfile.dev"
+when 'restart'
+  system "god restart"
+when 'start'
+  system "god start"
+when 'status'
+  system "god status"
+when 'stop'
+  system "god stop"
+when 'test'
+  abort "don't run tests in production" if ENV['RACK_ENV'] == 'production'
+  spec_file = ARGV[1]
+  system "SPEC_FILE=#{spec_file} rake admin:test"
+else
+  abort "unknown command: #{command}" if command && command !~ /^(c|console)$/
+  system "pry -I . -r ./lib/vcards.rb"
+end

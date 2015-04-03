@@ -12,12 +12,13 @@ create table if not exists users (
     id          bigint unsigned auto_increment primary key,
     card_id     bigint unsigned not null,
     country     char(2) not null,
+    email       varchar(255) not null,
+    crypt_of_pw varchar(255) not null,
     config      mediumblob not null, 
     config_pvt  mediumblob not null, 
-    password    varchar(255) not null,
+    created_at  timestamp not null,
     public_key  text not null,
     private_key text not null,
-    created_at  timestamp not null,
 
     key         user_card_id(card_id)
 );
