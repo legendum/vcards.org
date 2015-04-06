@@ -12,8 +12,10 @@ create table if not exists users (
     id          bigint unsigned auto_increment primary key,
     card_id     bigint unsigned not null,
     country     char(2) not null,
+    plan        varchar(255) not null,
+    state       varchar(255) not null,
     email       varchar(255) not null,
-    crypt_of_pw varchar(255) not null,
+    cryptor_pvt varchar(255) not null,
     config      mediumblob not null, 
     config_pvt  mediumblob not null, 
     created_at  timestamp not null,
@@ -21,6 +23,7 @@ create table if not exists users (
     private_key text not null,
 
     key         user_card_id(card_id)
+    key         user_email(email(12))
 );
 
 create table if not exists cardnames (
@@ -87,7 +90,7 @@ create table if not exists field_values (
     card_id     bigint unsigned not null,
     field_id    smallint unsigned not null,
     value       blob,
-    is_private  char(1),
+    visibility  char(1),
     updated_at  datetime,
     created_at  timestamp not null,
 
