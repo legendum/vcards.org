@@ -1,0 +1,32 @@
+development:
+  encoding: utf8
+  adapter: mysql2
+  host: localhost
+  database: vcards_dev
+  username: root
+  password: 
+  socket: /tmp/mysql.sock
+  pool: 5
+  timeout: 5000
+
+test:
+  encoding: utf8
+  adapter: mysql2
+  host: localhost
+  database: vcards_test
+  username: root
+  password: 
+  socket: /tmp/mysql.sock
+  pool: 5
+  timeout: 5000
+
+production:
+  encoding: utf8
+  adapter: mysql2
+  host: localhost
+  database: vcards
+  username: <%= ENV["MYSQL_USERNAME"] %>
+  password: <%= ENV["MYSQL_PASSWORD"] %>
+  socket: /var/run/mysqld/mysqld.sock
+  pool: 5
+  timeout: 5000
