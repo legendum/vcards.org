@@ -1,0 +1,4 @@
+formation: worker-mail=1,worker-fast=1,worker-slow=1,mailcatcher=1,web-server0=1,web-server1=1
+app: vcards
+log: ./log/
+rvm: ruby-2.2.0@vcards

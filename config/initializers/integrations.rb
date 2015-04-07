@@ -1,5 +1,5 @@
 # Please setup env vars in the .env file
-module LeanSignals
+module VCards
   def self.integrations
     {
 # TODO: Fix this

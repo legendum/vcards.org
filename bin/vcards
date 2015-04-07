@@ -5,15 +5,19 @@ command = ARGV[0]
 case command
 when 'help'
   puts <<-End_of_help
-  vcards run        : Run vCards servers in development mode
-  vcards restart    : Restart "god" in production
-  vcards start      : Start "god" in production
-  vcards status     : Show "god" status in production
-  vcards stop       : Stop "god" in production
-  vcards test       : Run all tests in development mode
-  vcards test file  : Run specific tests in development mode
-  vcards [c]onsole  : Run a development console
+  vcards [c]onsole    : Run a development console
+  vcards help         : Display this page of commands
+  vcards rake         : List all the rake commands
+  vcards restart      : Restart "god" in production
+  vcards run          : Run vCards servers in development mode
+  vcards start        : Start "god" in production
+  vcards status       : Show "god" status in production
+  vcards stop         : Stop "god" in production
+  vcards test         : Run all tests in development mode
+  vcards test <file>  : Run specific tests in development mode
   End_of_help
+when 'rake'
+  system "rake -T"
 when 'run'
   abort 'use "vcards start" in production' if ENV['RACK_ENV'] == 'production'
   system "foreman start -f Procfile.dev"
