@@ -1,4 +1,4 @@
-mailcatcher: rake admin:mailcatcher
+mailcatcher: mailcatcher --foreground
 worker-mail: rake backburner:work:mail
 worker-fast: rake backburner:work:fast
 worker-slow: rake backburner:work:slow

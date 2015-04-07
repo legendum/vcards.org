@@ -15,13 +15,6 @@ namespace :admin do
     puts "(Remember to restart the God process when changing the environment)"
   end
 
-  desc 'Run "mailcatcher"'
-  task(:mailcatcher) do
-    Signal.trap("INT") { system "killall mailcatcher"; exit }
-    system "mailcatcher" # runs as a daemon automatically
-    sleep 1 while true # so foreman doesn't assume failure
-  end
-
   desc "Run all the tests"
   task(:test) do
     spec_file = ENV['SPEC_FILE'] # an optional file to test
