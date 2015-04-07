@@ -40,7 +40,7 @@ gem "backburner"
 
 # Operations
 gem "beanstalkd_view"
-gem "foreman", ">=0.76.0"
+gem "foreman"
 gem "rake"
 gem "whenever"
 
