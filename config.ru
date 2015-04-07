@@ -1,9 +1,9 @@
-ENV["RACK_ENV"] ||= "development"
-ENV["BEANSTALK_URL"] ||= "beanstalk://localhost/"
-ENV["AUTH_PASSWORD"] ||= "password" # NOTE: override this!
-
 require_relative "./lib/vcards.rb"
 VCards.setup
+
+ENV["RACK_ENV"] ||= "development"
+ENV["BEANSTALK_URL"] ||= "beanstalk://localhost/"
+ENV["AUTH_PASSWORD"] ||= "password" # NOTE: override this in your .env file
 
 map "/" do
   run VCards::App
