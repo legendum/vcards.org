@@ -93,9 +93,8 @@ a:hover {
 
 .card {
   text-align: left;
-  margin-left: 12px;
-  margin-bottom: 12px;
   display: inline-block;
+  margin: 6px;
   width: 360px;
   height: 220px;
   background-color: #fff;
