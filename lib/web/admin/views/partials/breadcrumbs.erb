@@ -1,0 +1,5 @@
+<nav class="breadcrumbs">
+<% links.each do |url, name| %>
+<a class="<%= url=='#' ? 'current' : '' %>" href="<%= url %>"><%= h(name) %></a>
+<% end %>
+</nav>
