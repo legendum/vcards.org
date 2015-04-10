@@ -74,7 +74,11 @@ a:hover {
 .page {
   position: relative;
   min-height: 100%;
-  margin-bottom: -63px;
+  margin-bottom: -60px;
+}
+
+.footer-break {
+  float: left;
 }
 
 .footer {
@@ -87,7 +91,7 @@ a:hover {
 
 .cards {
   text-align: center;
-  padding-top: 63px;
+  padding-top: 60px;
   color: #555;
 }
 
