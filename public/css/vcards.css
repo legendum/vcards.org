@@ -77,11 +77,6 @@ a:hover {
   margin-bottom: -63px;
 }
 
-.page .content {
-  padding-top: 63px;
-  color: #555;
-}
-
 .footer {
   position: relative;
   color: #986;
@@ -90,10 +85,17 @@ a:hover {
   text-shadow: 0 1px 1px #fff;
 }
 
+.cards {
+  text-align: center;
+  padding-top: 63px;
+  color: #555;
+}
+
 .card {
+  text-align: left;
   margin-left: 12px;
   margin-bottom: 12px;
-  float: left;
+  display: inline-block;
   width: 360px;
   height: 220px;
   background-color: #fff;
