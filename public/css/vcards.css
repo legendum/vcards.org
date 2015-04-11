@@ -64,6 +64,10 @@ a:hover {
   border: 1px solid #ccc;
 }
 
+.topbar .header #menu-button {
+  display: inline-block;
+}
+
 .topbar .header .menu {
   position: absolute;
   top: 10px;
@@ -106,10 +110,11 @@ a:hover {
 }
 
 .card .info {
+  font-size: 14px;
   padding: 10px;
 }
 
-.info .company {
+.card .info .company {
   font-size: 18px;
   padding-bottom: 5px;
 }
