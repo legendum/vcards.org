@@ -1,9 +1,59 @@
-<!doctype html>
+<!doctype HTML>
 <html>
 <head>
   <title>vCards</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manange your connections across all networks">
+  <meta name="author" content="Legendum Ltd, London, UK">
+  <meta name="copyright" content="Legendum Ltd. Copyright (c) 2015">
+
+<% if VCards.development? %>
+  <base href="http://localhost:9090/">
+<% else %>
+  <base href="https://vcards.org/">
+<% end %>
+
+  <%= css :app_basics %>
+  <%= defined?(extras) ? css(:app_extras) : '' %>
+
+  <%= js :app_basics %>
+  <%= defined?(extras) ? js(:app_extras) : '' %>
+
+  <link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css">
+  <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <div class="topbar">
+    <div class="header">
+      <form name="search" method="get">
+      <div class="menu">
+        <span id="access">
+          <a href="#login" id="login">Login</a> <span class="divbar">|</span>
+          <a href="#sign-up" id="signup">Sign up</a>
+        </span>
+        <a href="#logout" id="logout" class="hidden">Logout</a>
+      </div>
+      <a href="#" id="menu-button"><i class="fi-list"></i></a>
+      <div id="logo">vCards</div>
+      <div class="search">
+        <input id="query" type="text" name="q" value="" placeholder="Search">
+        <input type="hidden" name="la" value="en-us">
+      </div>
+      </form>
+    </div>
+  </div>
+  <div class="page">
 <%= yield %>
+    <div class="footer-break">&nbsp;</div>
+  </div>
+  <div class="footer">
+    <div style="clear: both"></div>
+    <small>
+      &copy;2015 Legendum Ltd. All Rights Reserved.<br>
+      <a href="#legal" id="legal">Terms&nbsp;&amp;&nbsp;conditions</a>.
+      <a href="#privacy" id="privacy">Privacy&nbsp;policy</a>.
+    </small>
+  </div>
 </body>
 </html>

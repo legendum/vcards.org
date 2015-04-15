@@ -8,8 +8,6 @@ module VCards
     set :public_folder, Proc.new { File.join(root, "app", "public") } 
 
     assets do
-      # Images
-      serve "/images", from: "app/images"
 
       # JavaScript and CoffeeScript
       serve "/scripts", from: "app/scripts"
