@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>vCards</title>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Manange your connections across all networks">
@@ -9,7 +11,7 @@
   <meta name="copyright" content="Legendum Ltd. Copyright (c) 2015">
 
 <% if VCards.development? %>
-  <base href="http://localhost:9090/">
+  <base href="http://localhost:9292/">
 <% else %>
   <base href="https://vcards.org/">
 <% end %>
@@ -29,7 +31,7 @@
       <form name="search" method="get">
       <div class="menu">
         <span id="access">
-          <a href="#login" id="login">Login</a> <span class="divbar">|</span>
+          <a href="#log-in" id="login">Login</a> <span class="divbar">|</span>
           <a href="#sign-up" id="signup">Sign up</a>
         </span>
         <a href="#logout" id="logout" class="hidden">Logout</a>
