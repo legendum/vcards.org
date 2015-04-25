@@ -57,5 +57,10 @@
       <a href="#privacy" id="privacy">Privacy&nbsp;policy</a>.
     </small>
   </div>
+  <script type="text/javascript">
+  App.init(<%= {
+    debug: VCards.development?
+  }.to_json %>);
+  </script>
 </body>
 </html>
